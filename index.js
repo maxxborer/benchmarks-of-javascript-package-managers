@@ -123,7 +123,7 @@ async function run () {
       ${fixture.mdDesc}
 
       | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
-      | ---     | ---   | ---      | ---         | --- | --- | --- | --- |
+      | ---     | ---   | ---      | ---         | --- | --- | --- | --- | --- |
       | install |       |          |             | ${prettyMs(npmRes.firstInstall)} | ${prettyMs(pnpmRes.firstInstall)} | ${prettyMs(yarnRes.firstInstall)} | ${prettyMs(yarnPnPRes.firstInstall)} | ${prettyMs(bunRes.firstInstall)} |
       | install | ✔     | ✔        | ✔           | ${prettyMs(npmRes.repeatInstall)} | ${prettyMs(pnpmRes.repeatInstall)} | ${prettyMs(yarnRes.repeatInstall)} | n/a | ${prettyMs(bunRes.repeatInstall)} |
       | install | ✔     | ✔        |             | ${prettyMs(npmRes.withWarmCacheAndLockfile)} | ${prettyMs(pnpmRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnRes.withWarmCacheAndLockfile)} | ${prettyMs(yarnPnPRes.withWarmCacheAndLockfile)} | ${prettyMs(bunRes.withWarmCacheAndLockfile)} |

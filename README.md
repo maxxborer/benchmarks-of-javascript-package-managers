@@ -19,7 +19,7 @@ Here's a quick explanation of how these tests could apply to the real world:
 The app's `package.json` [here](./fixtures/angular-quickstart/package.json)
 
 | action  | cache | lockfile | node_modules| npm | pnpm | Yarn | Yarn PnP | Bun |
-| ---     | ---   | ---      | ---         | --- | --- | --- | --- |
+| ---     | ---   | ---      | ---         | --- | --- | --- | --- | --- |
 | install |       |          |             | 1m 20.4s | 21.6s | 30.9s | 23.7s | 5.9s |
 | install | ✔     | ✔        | ✔           | 8.5s | 591ms | 272ms | n/a | 314ms |
 | install | ✔     | ✔        |             | 5.8s | 6.3s | 6.1s | 942ms | 1s |
